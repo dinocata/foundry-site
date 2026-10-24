@@ -19,3 +19,15 @@ The pages use plain HTML and CSS, with no build dependencies, JavaScript, tracki
 Run `python3 -m http.server 8765` in this directory, then open http://localhost:8765/.
 
 Update the policy date whenever privacy practices change. Keep provider descriptions aligned with the app and retention statements aligned with production configuration.
+
+## App Store launch checklist
+
+- Publish the contact email update and verify that the home, support, and privacy URLs above load publicly over HTTPS.
+- Send a test message to hello@swift.hr and confirm that replies can be sent from that address.
+- Confirm the email-provider description in the privacy policy matches the service handling hello@swift.hr.
+- Compare the privacy policy with the release build and production Firebase settings: analytics defaults by country and age, consent controls, crash reporting defaults, identifiers, retention, deletion requests, and update checks.
+- Match App Store Connect privacy disclosures to the data collected by the app and its third-party SDKs. Confirm the app links to the public privacy and support pages.
+- Verify that the backup instructions and Preferences labels match the release app.
+- Once the App Store product URL is available, add a download link to the home page and verify its destination. Do not publish a placeholder link.
+
+Do not mark privacy or provider checks complete until verified against the release configuration. Update the privacy policy and its date if those checks require changes.
