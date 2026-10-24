@@ -5,24 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Foundry is a private, offline-first workout tracker for iPhone. Privacy policy and support from Swift d.o.o.">
   <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#161826">
+  <link rel="icon" type="image/png" href="./assets/foundry-icon.png">
   <title>Private workout tracking · Foundry</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header><a class="brand" href="./">Foundry<span>by Swift d.o.o.</span></a>
+  <header><a class="brand" href="./"><img src="./assets/foundry-icon.png" width="44" height="44" alt=""><span class="brand-name">Foundry<small>by Swift d.o.o.</small></span></a>
     <nav aria-label="Main"><a href="./privacy/">Privacy</a><a href="./support/">Support</a></nav>
   </header>
-  <main id="main">
-    <p class="eyebrow">Workout tracking for iPhone</p>
-    <h1>Your training.<br>Your own space.</h1>
-    <p class="lead">Plan workouts, log your sets, and follow your progress. Foundry works offline, with no account required.</p>
-    <p>Your workouts and profile stay on your iPhone. Optional usage analytics and crash reporting have separate controls in Preferences.</p>
-    <div class="links"><a href="privacy/"><strong>Privacy policy</strong><span>What stays on your device, what is sent, and your choices.</span></a><a href="support/"><strong>Get support</strong><span>Ask a question, report a problem, or make a privacy request.</span></a></div>
-    <h2>Made for your workout</h2>
-    <p>Workout plans, custom exercises, rest timers, exercise history, personal bests, and recovery estimates help you keep training moving.</p>
-    <p class="meta">Foundry offers training guidance, not medical advice. Check with a doctor before starting a new plan, especially with an injury or health condition.</p>
-</main>
+  <main id="main" class="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Your training. Your progress.</p>
+        <h1 id="hero-title">Build strength.<br><span>Keep it yours.</span></h1>
+        <p class="lead">A focused space for your next set and every session after it. Plan workouts, log your lifts, and see how far you’ve come.</p>
+        <p class="hero-note">Made for iPhone. Works offline. No account required.</p>
+        <div class="actions"><a class="button" href="support/">Get support <span aria-hidden="true">↗</span></a><a class="text-link" href="privacy/">Your privacy, explained <span aria-hidden="true">→</span></a></div>
+      </div>
+      <div class="brand-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><img src="assets/foundry-icon.png" width="320" height="320" alt=""><div class="art-caption">FOUNDRY <span>Built around your training.</span></div></div>
+    </section>
+    <section class="features" aria-labelledby="features-title">
+      <div class="section-heading"><p class="eyebrow">Less friction. More focus.</p><h2 id="features-title">From the first set<br>to your next personal best.</h2></div>
+      <div class="feature-grid">
+        <article class="feature"><span class="feature-number">01 / PLAN</span><h3>Make it your workout.</h3><p>Build workout plans with your exercises and equipment. Keep your next session ready when you are.</p><div class="feature-detail"><span>Workout plans</span><span>Custom exercises</span></div></article>
+        <article class="feature"><span class="feature-number">02 / TRAIN</span><h3>Stay in your rhythm.</h3><p>Log sets, weights, and repetitions. Rest timers and previous workout context help you keep moving.</p><div class="feature-detail"><span>Set logging</span><span>Rest timers</span></div></article>
+        <article class="feature"><span class="feature-number">03 / PROGRESS</span><h3>See your work add up.</h3><p>Revisit your training history, follow your personal bests, and use recovery estimates to plan what comes next.</p><div class="feature-detail"><span>Personal bests</span><span>Exercise history</span></div></article>
+      </div>
+    </section>
+    <section class="privacy-band" aria-labelledby="privacy-title"><div><p class="eyebrow">Personal by design</p><h2 id="privacy-title">Your workouts belong to you.</h2><p>Your training and profile stay on your iPhone. Optional usage analytics and crash reporting have separate controls in Preferences.</p></div><a class="text-link" href="privacy/">Read our privacy policy <span aria-hidden="true">↗</span></a></section>
+    <div class="links"><a href="support/"><strong>Here when you need us <span aria-hidden="true">↗</span></strong><span>Questions, feedback, or a problem with Foundry? Get in touch.</span></a><a href="privacy/"><strong>A little more clarity <span aria-hidden="true">↗</span></strong><span>Learn about local storage, backups, and your privacy controls.</span></a></div>
+    <p class="meta health-note">Foundry offers training guidance, not medical advice. Check with a doctor before starting a new plan, especially with an injury or health condition.</p>
+  </main>
   <footer><span>Foundry · Swift d.o.o.</span><a href="mailto:hello@swift.hr">hello@swift.hr</a></footer>
 </body>
 </html>
