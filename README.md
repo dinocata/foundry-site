@@ -28,6 +28,6 @@ Update the policy date whenever privacy practices change. Keep provider descript
 - Compare the privacy policy with the release build and production Firebase settings: analytics defaults by country and age, consent controls, crash reporting defaults, identifiers, retention, deletion requests, and update checks.
 - Match App Store Connect privacy disclosures to the data collected by the app and its third-party SDKs. Confirm the app links to the public privacy and support pages.
 - Verify that the backup instructions and Preferences labels match the release app.
-- Once the App Store product URL is available, add a download link to the home page and verify its destination. Do not publish a placeholder link.
+- Replace the temporary https://apps.apple.com/ link marked `APP_STORE_URL` in index.html with Foundry’s App Store product URL. Remove the coming-soon placeholder note and verify the product destination before launch.
 
 Do not mark privacy or provider checks complete until verified against the release configuration. Update the privacy policy and its date if those checks require changes.
